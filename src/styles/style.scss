@@ -1,0 +1,157 @@
+
+  body {
+    background-color: #353638;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    .main-app {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
+
+      .add {
+        display: block;
+        width: 225px;
+        height: 120px;
+        background-color: #696969;
+        border: none;
+        font-size: 35px;
+        font-weight: 500;
+        color: #9E9E9E;
+        margin: 0 auto;
+        outline: none;
+        align-self: flex-start;
+      }
+    }
+    .app {
+      width: 225px;
+      height: 120px;
+      background-color: #696969;
+      border: none;
+      margin: 0 auto;
+
+      .timer {
+        width: 100%;
+        height: 50%;
+        border-bottom: 1px solid #9E9E9E;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 21px;
+        text-align: center;
+        color: #9E9E9E;
+      }
+
+      .change-color{
+        border-bottom: 1px solid #ffffff;
+        color: #ffffff;
+      }
+
+      .timer__btn {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+
+        .click-start {
+          width: 20px;
+          height: 20px;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          padding: 0;
+          cursor: pointer;
+        }
+
+        .active-play {
+          display: none;
+          color: white;
+        }
+
+        .click-stop {
+          width: 20px;
+          height: 20px;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          color: #9E9E9E;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 0;
+          display: none;
+          cursor: pointer;
+        }
+
+        .active-stop {
+          display: block;
+          color: white;
+        }
+
+        .click-reset {
+          width: 20px;
+          height: 20px;
+          background-color: #9E9E9E;
+          border: none;
+          outline: none;
+          padding: 0;
+          cursor: pointer;
+        }
+        .active-reset {
+          background-color: white;
+        }
+
+      }
+
+    }
+  }
+@media screen and (max-width: 1024px) {
+#app-general {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-flow: column wrap;
+  .main-app {
+    width: 80%;
+    flex-flow: row wrap;
+  }
+  .app {
+    margin: 0;
+  }
+  .add {
+    margin: 0;
+  }
+}
+}
+
+  @media screen and (min-width: 1024px) {
+    #app-general {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-flow: column wrap;
+      .main-app {
+        width: 80%;
+        flex-flow: row wrap;
+      }
+      .app {
+        margin: 0;
+      }
+      .add {
+        margin: 0;
+      }
+    }
+  }
